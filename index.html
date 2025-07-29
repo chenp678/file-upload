@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Your Resume</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Finish!</h1>
+            <h2>Upload Your Resume</h2>
+            <p>Upload your resume, the platform will help you parse and optimize, you can also skip this step</p>
+            <img src="https://pic.mksucai.com/00/45/74/933ce8180ef1e20f.webp" alt="Illustration">
+        </div>
+        <div class="right-section">
+            <h3>Upload file</h3>
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">☁️</div>
+                <p>Drag your resume file to this area, or click on the area to select the appropriate file to upload</p>
+                <input type="file" id="fileInput" accept=".pdf,.doc,.docx" style="display: none;">
+            </div>
+            <div class="button-group">
+                <button class="btn" id="lastStepBtn">Last step</button>
+                <button class="btn primary" id="finishBtn">Finish</button>
+            </div>
+            <div class="progress-indicator">
+                <span class="dot active">√</span>
+                <span class="dot active">√</span>
+                <span class="dot"></span>
+            </div>
+            <div id="fileNameDisplay" style="margin-top: 10px;"></div>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
